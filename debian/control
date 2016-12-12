@@ -1,0 +1,18 @@
+Source: mds
+Priority: optional
+Maintainer: Justin Vreeland <jvreeland@hpe.com>
+Build-Depends: debhelper (>= 9), mpgc-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://github.com/HewlettPackard/mds
+
+Package: mds
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Managed Data Structures
+
+Package: mds-dev
+Architecture: any
+Depends: mds (= ${binary:Version}), ${misc:Depends}
+Description: Managed Data Structures development
+
